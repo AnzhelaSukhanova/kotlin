@@ -1,10 +1,10 @@
 ## Test task report
 
 Generator of junit-methods: kotlin/compiler/tests-when-test-task.  
-The gradle-task __:compiler:tests-when-test-task:generateTests__ runs the generator. You can use __Test task__ run configuration for this. 
+The gradle-task __:compiler:tests-when-test-task:generateTests__ runs the generator. You can use __Test task__ run configuration for this.  
 Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java. You can use __DiagnosticTestGenerated__ run configuration.
 
-#### Tests that should lead to compilation errors
+### Tests that should lead to compilation errors
 | Test | Problem |
 |------|---------|
 | EmptyWhen.kt | Empty when-body |
@@ -22,7 +22,7 @@ Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/tes
 | ValConclusion.kt | Variable definition in the conclusion |
 
 
-#### Tests that should pass (with warnings in some tests)
+### Tests that should pass (with warnings in some tests)
 | Test | Description | 
 |------|-------------|
 | NestedWhen.kt | Nested when-statement |
@@ -42,5 +42,5 @@ Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/tes
 | IfConclusion.kt | It has if-then-else conclusion |
 | ReadWhen.kt | It read the argument |
  
-#### Coverage
+### Coverage
 Coverage of all packages is collected. You can see it by opening the __Coverage_SORT_BY_CLASS_DESC.html__.
