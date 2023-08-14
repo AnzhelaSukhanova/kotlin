@@ -1,7 +1,6 @@
 ## Test task report
 
-Generator of junit-methods: kotlin/compiler/tests-when-test-task.  
-The gradle-task __:compiler:tests-when-test-task:generateTests__ runs the generator. You can use __Test task__ run configuration for this.  
+Generator of junit-methods: kotlin/compiler/tests-when-test-task. The gradle-task :compiler:tests-when-test-task:generateTests runs the generator. You can use __Test task__ run configuration for this.  
 Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java. You can use __DiagnosticTestGenerated__ run configuration.
 
 ### Tests that should lead to compilation errors
@@ -33,7 +32,7 @@ Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/tes
 | ConditionUnion.kt | It unites some conditions |
 | UnreachableCondition.kt | It has unreachable condition |
 | UnreachableSubclass.kt | It has unreachable type check |
-| UnreachableRanges.kt | It has uunreachable range-conditions |
+| UnreachableRanges.kt | It has unreachable range-conditions |
 | UnusedWhen.kt | When-expression with only else-condition |
 | IfElseIf.kt | When-statement as an if-else if chain |
 | TrueCondition.kt | One condition is always true |
@@ -43,4 +42,4 @@ Test runner: kotlin/compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/tes
 | ReadWhen.kt | It read the argument |
  
 ### Coverage
-Coverage of all packages is collected. You can see it by opening the __Coverage_SORT_BY_CLASS_DESC.html__.
+Coverage of all packages is collected. You can see it by opening the Coverage_SORT_BY_CLASS_DESC.html.
