@@ -1,0 +1,8 @@
+enum class DAY {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+fun foo(x: DAY) = when (x) {
+    DAY.MONDAY, DAY.TUESDAY, DAY.WEDNESDAY, DAY.THURSDAY, DAY.FRIDAY -> print("Weekday")
+    DAY.SATURDAY, DAY.SUNDAY -> print("Weekend")
+}

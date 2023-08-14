@@ -1,0 +1,14 @@
+// FIR_IDENTICAL
+enum class DAY {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+fun foo(x: DAY): Int = when (x) {
+    DAY.SUNDAY -> 1
+    DAY.MONDAY -> 2
+    DAY.TUESDAY -> 3
+    DAY.WEDNESDAY -> 4
+    DAY.THURSDAY -> 5
+    DAY.FRIDAY -> 6
+    DAY.SATURDAY -> 7
+}
