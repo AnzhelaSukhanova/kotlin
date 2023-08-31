@@ -15,7 +15,28 @@ fun main(args: Array<String>) {
     generateTestGroupSuiteWithJUnit5(args) {
         testGroup(testsRoot = "compiler/tests-common-new/tests-gen", testDataRoot = "compiler/testData") {
             testClass<AbstractDiagnosticTest> {
-                model("diagnostics/tests/when/testTask", pattern = "^(.*)\\.kts?$", excludedPattern = excludedCustomTestdataPattern)
+                model(
+                    "diagnostics/tests/when/testTask", pattern = "^(.*)\\.kts?$",
+                    excludedPattern = excludedCustomTestdataPattern
+                )
+            }
+        }
+
+        testGroup(testsRoot = "compiler/fir/analysis-tests/tests-gen", testDataRoot = "compiler/testData") {
+            testClass<AbstractFirPsiDiagnosticTest>(suiteTestClassName = "FirPsiOldFrontendDiagnosticsTestGenerated") {
+                model(
+                    "diagnostics/tests/when/testTask", pattern = "^(.*)\\.kts?$",
+                    excludedPattern = excludedCustomTestdataPattern
+                )
+            }
+
+            testClass<AbstractFirLightTreeDiagnosticsTest>(
+                suiteTestClassName = "FirLightTreeOldFrontendDiagnosticsTestGenerated"
+            ) {
+                model(
+                    "diagnostics/tests/when/testTask",
+                    excludedPattern = excludedCustomTestdataPattern
+                )
             }
         }
     }

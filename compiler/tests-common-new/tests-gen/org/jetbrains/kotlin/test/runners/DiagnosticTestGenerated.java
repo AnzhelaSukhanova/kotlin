@@ -37,6 +37,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     }
 
     @Test
+    @TestMetadata("BranchAfterElse.kt")
+    public void testBranchAfterElse() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/BranchAfterElse.kt");
+    }
+
+    @Test
     @TestMetadata("ConditionUnion.kt")
     public void testConditionUnion() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/ConditionUnion.kt");
@@ -103,6 +109,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     }
 
     @Test
+    @TestMetadata("LambdaWhen.kt")
+    public void testLambdaWhen() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/LambdaWhen.kt");
+    }
+
+    @Test
     @TestMetadata("MissingElse.kt")
     public void testMissingElse() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/MissingElse.kt");
@@ -145,6 +157,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     }
 
     @Test
+    @TestMetadata("RecursiveWhen.kt")
+    public void testRecursiveWhen() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/RecursiveWhen.kt");
+    }
+
+    @Test
     @TestMetadata("ReturnWhen.kt")
     public void testReturnWhen() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/ReturnWhen.kt");
@@ -169,6 +187,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     }
 
     @Test
+    @TestMetadata("TypeMismatchValue.kt")
+    public void testTypeMismatchValue() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/TypeMismatchValue.kt");
+    }
+
+    @Test
     @TestMetadata("UnreachableCondition.kt")
     public void testUnreachableCondition() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/UnreachableCondition.kt");
@@ -187,6 +211,12 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     }
 
     @Test
+    @TestMetadata("UnreachableTypeMismatchValue.kt")
+    public void testUnreachableTypeMismatchValue() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/UnreachableTypeMismatchValue.kt");
+    }
+
+    @Test
     @TestMetadata("UnusedWhen.kt")
     public void testUnusedWhen() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/UnusedWhen.kt");
@@ -196,5 +226,23 @@ public class DiagnosticTestGenerated extends AbstractDiagnosticTest {
     @TestMetadata("ValConclusion.kt")
     public void testValConclusion() throws Exception {
         runTest("compiler/testData/diagnostics/tests/when/testTask/ValConclusion.kt");
+    }
+
+    @Test
+    @TestMetadata("ValueInsteadOfType.kt")
+    public void testValueInsteadOfType() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/ValueInsteadOfType.kt");
+    }
+
+    @Test
+    @TestMetadata("WithSemicolon.kt")
+    public void testWithSemicolon() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/WithSemicolon.kt");
+    }
+
+    @Test
+    @TestMetadata("WithoutSpaces.kt")
+    public void testWithoutSpaces() throws Exception {
+        runTest("compiler/testData/diagnostics/tests/when/testTask/WithoutSpaces.kt");
     }
 }
